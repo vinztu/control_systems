@@ -1,4 +1,3 @@
-# _quarto.yml
 project:
   type: website
   output-dir: _site
@@ -9,6 +8,16 @@ website:
     left:
       - href: index.qmd
         text: Home
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Chapter 1 — Mathematical Foundations"
+        contents:
+          - href: 01_mathematical_foundations/README.md
+            text: "Overview"
+          - href: 01_mathematical_foundations/1.1_linear_algebra.md
+            text: "1.1 Linear Algebra"
 
 format:
   html:
