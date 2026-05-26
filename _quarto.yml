@@ -1,0 +1,17 @@
+# _quarto.yml
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Control Systems"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
