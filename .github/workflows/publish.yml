@@ -8,9 +8,13 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
       pages: write
       id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repo
@@ -21,8 +25,14 @@ jobs:
 
       - name: Render site
         uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "_site"
 
       - name: Deploy to GitHub Pages
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
+        id: deployment
+        uses: actions/deploy-pages@v4
