@@ -48,18 +48,3 @@ Provides the probabilistic language needed for stochastic system models, sensor 
 A concise introduction to the geometry of convex sets and the analytic properties of convex functions. Serves as the direct bridge to Chapter 2 (Optimization Foundations) and reappears throughout the course wherever Lyapunov functions, LMIs, or convex synthesis methods are involved (Chapters 12, 17, 23).
 
 ---
-
-## Topic Index
-
-| Original topic | Covered in |
-|---|---|
-| Linear Algebra | 1.1 |
-| Vector Spaces | 1.1 |
-| Eigenvalues and Eigenvectors | 1.1 |
-| Norms | 1.1 |
-| Matrix Factorizations | 1.2 |
-| Ordinary Differential Equations | 1.3 |
-| Difference Equations | 1.3 |
-| Numerical Methods | 1.4 |
-| Probability and Statistics | 1.5 |
-| Convexity Basics | 1.6 |
