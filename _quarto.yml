@@ -14,10 +14,12 @@ website:
     contents:
       - section: "Chapter 1 — Mathematical Foundations"
         contents:
-          - href: 01_mathematical_foundations/README.md
+          - href: 01_mathematical_foundations/overview.qmd
             text: "Overview"
           - href: 01_mathematical_foundations/1.1_linear_algebra.md
             text: "1.1 Linear Algebra"
+          - href: 01_mathematical_foundations/1.2_matrix_factorizations.md
+            text: "1.2 Matrix Factorizations"
 
 format:
   html:

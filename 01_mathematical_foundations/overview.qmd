@@ -1,0 +1,34 @@
+---
+title: "Module 1 — Mathematical Foundations"
+subtitle: "Prerequisites and core tools for linear control theory"
+format:
+  html:
+    toc: false
+    number-sections: false
+---
+
+This module covers the mathematical prerequisites for the rest of the course.
+Every later chapter draws on at least one of these foundations, so the material is developed with enough depth to make the connections to control theory explicit.
+
+## Chapters
+
+| # | Title | Key Topics |
+|---|---|---|
+| 1.1 | [Linear Algebra](1.1_linear_algebra.md) | Vector spaces, eigenvalues, Jordan form, inner products, norms |
+| 1.2 | [Matrix Factorizations](1.2_matrix_factorizations.md) | LU, Cholesky, QR, SVD, Schur complement |
+| 1.3 | Ordinary Differential Equations | Matrix exponential, linear ODE systems, difference equations |
+| 1.4 | Numerical Methods | Conditioning, Gaussian elimination, ODE solvers |
+| 1.5 | Probability & Statistics | Gaussian distribution, covariance, expectation |
+| 1.6 | Convexity Basics | Convex sets, convex functions, first/second-order conditions |
+
+## Prerequisites
+
+No prior control knowledge is assumed. Familiarity with calculus and introductory linear algebra (matrix multiplication, determinants) is helpful but not required.
+
+## How These Topics Connect to Control
+
+- **1.1 + 1.2** form the algebraic and numerical foundation used in every subsequent chapter.
+- **1.3** develops the time-domain solution of state-space systems (Chapter 3).
+- **1.4** bridges theory and simulation, needed for implementing any control algorithm.
+- **1.5** enables stochastic models, Kalman filtering (Chapter 10), and system identification (Chapter 9).
+- **1.6** connects directly to optimization (Chapter 2) and Lyapunov-based synthesis (Chapter 12).
